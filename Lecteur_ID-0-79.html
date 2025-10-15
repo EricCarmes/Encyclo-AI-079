@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-79-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - UN VOYAGE À TRAVERS L'HISTOIRE ET L'ÉVOLUTION DES ÉCHECS</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - ORIGINES DU CHATURANGA : UN JEU MILITAIRE INDIEN</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Les racines culturelles du Chaturanga</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - Les règles et mécanismes du Chaturanga</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - L'impact du Chaturanga sur les jeux stratégiques</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - ÉVOLUTION VERS LE SHATRANJ : ADAPTATIONS ET INNOVATIONS EN PERSE</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - La transition culturelle du Chaturanga au Shatranj</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Les innovations stratégiques du Shatranj</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - La diffusion du Shatranj dans le monde islamique</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - INTRODUCTION DES ÉCHECS EN EUROPE : TRANSFORMATIONS AU MOYEN ÂGE</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - L'arrivée des échecs en Europe via l'Espagne</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - Les modifications des règles au Moyen Âge</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - L'impact des échecs sur la société médiévale</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - LA RENAISSANCE : STANDARDISATION ET COMPÉTITIONS OFFICIELLES</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - L'évolution des règles pendant la Renaissance</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - Les premiers tournois d'échecs</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - L'influence de la Renaissance sur la stratégie échiquéenne</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - CRÉATION DE LA FIDE</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - Les origines de la FIDE</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - L'impact de la FIDE sur les échecs mondiaux</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - Les controverses et défis de la FIDE</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - IMPACT DE LA RÉVOLUTION INDUSTRIELLE SUR LA DIFFUSION DES ÉCHECS</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - L'imprimerie et la publication de manuels d'échecs</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - L'émergence des clubs d'échecs</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - La presse spécialisée et les échecs</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - ÉCHECS MODERNES : L'ÈRE NUMÉRIQUE ET L'ANALYSE ASSISTÉE PAR ORDINATEUR</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - L'avènement des logiciels d'échecs</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Les bases de données échiquéennes</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - L'IA et les échecs</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - L'ESSOR DES ÉCHECS EN LIGNE : ACCESSIBILITÉ ET COMMUNAUTÉ MONDIALE</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - Les plateformes en ligne et leur impact</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - Les tournois en ligne et leur popularité</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - Les échecs en ligne comme outil pédagogique</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - LES ÉCHECS : UN HÉRITAGE VIVANT ET UNE FENÊTRE SUR L'AVENIR</a></li>
+  </ul>
+
+  <p><a href="ID-0-79-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
